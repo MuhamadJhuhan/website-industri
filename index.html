@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="DWI JALOKA Team">
+    <meta name="description" content="Menghadirkan kekayaan budaya Indonesia dalam sentuhan modern yang elegan">
+    <meta name="keywords" content="tradisi, nusantara, modern, indonesia, budaya">
+    <title>DWI JALOKA - Tradisi Nusantara, Sentuhan Modern</title>
+    
+    <!-- untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>DWI<br>JALOKA</h2>
+                </div>
+                
+                <!-- Menu Navigasi -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active" data-page="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tentang" class="nav-link" data-page="tentang">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#produk" class="nav-link" data-page="produk">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#kontak" class="nav-link" data-page="kontak">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item profile-dropdown">
+                        <a href="#" class="nav-link profile-icon">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item" id="login-btn">
+                                <i class="fas fa-sign-in-alt"></i> Login
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-user"></i> Profil Saya
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-history"></i> Riwayat Pesanan
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-cog"></i> Pengaturan
+                            </a>
+                            <a href="#" class="dropdown-item" id="logout-btn" style="display: none;">
+                                <i class="fas fa-sign-out-alt"></i> Logout
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                
+                <!-- Menu Hamburger untuk Mobile -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero page-section active">
+            <div class="hero-content">
+                <h1>DWI JALOKA</h1>
+                <h2>Tradisi Nusantara, Sentuhan Modern</h2>
+                <p>Menghadirkan kekayaan budaya Indonesia dalam sentuhan modern yang elegan</p>
+                <button class="cta-button">JELAJAHI PRODUK</button>
+            </div>
+        </section>
+
+        <!-- Tentang Kami Section -->
+        <section id="tentang" class="about page-section">
+            <div class="container">
+                <h2>Tentang Kami</h2>
+                <p>Dimulai dari tahun 2009, Dwi Jaloka telah berkomitmen untuk melestarikan warisan budaya Nusantara. Setelah melalui perjalanan panjang, kami resmi membuka toko fisik dan online pada tahun 2016. Kami percaya bahwa produk tradisional Indonesia memiliki nilai yang tak ternilai dan layak untuk diapresiasi oleh generasi muda.</p>
+                <p>Misi kami adalah menghadirkan produk-produk berkualitas tinggi yang menggabungkan keaslian tradisional dengan desain modern yang relevan dengan gaya hidup saat ini.</p>
+            </div>
+        </section>
+
+        <!-- Produk Section -->
+        <section id="produk" class="products page-section">
+            <div class="container">
+                <h2>Produk Kami</h2>
+                
+                <!-- Filter Produk -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="Barongan">Barongan</button>
+                    <button class="filter-btn" data-filter="Jaranan">Jaranan</button>
+                    <button class="filter-btn" data-filter="Aksesoris">Aksesoris</button>
+                </div>
+                
+                <!-- Grid Produk -->
+                <div class="product-grid">
+                    <!-- Produk 1 -->
+                    <div class="product-card" data-id="1" data-name="Kuda lumping" data-category="Jaranan" data-price="500000" data-image="image/produk1.jpeg">
+                        <div class="product-image">
+                            <img src="image/produk1.jpeg" alt="Kuda lumping">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Jaranan</div>
+                            <h3 class="product-name">Kuda lumping</h3>
+                            <div class="product-price">Rp 500.000</div>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                    <!-- Produk 2 -->
+                    <div class="product-card" data-id="2" data-name="Barongan" data-category="Barongan" data-price="1200000" data-image="image/produk2.jpeg">
+                        <div class="product-image">
+                            <img src="image/produk2.jpeg" alt="Barongan">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Barongan</div>
+                            <h3 class="product-name">Barongan</h3>
+                            <div class="product-price">Rp 1.200.000</div>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                    <!-- Produk 3 -->
+                    <div class="product-card" data-id="3" data-name="Celeng Jaranan" data-category="Jaranan" data-price="450000" data-image="image/produk3.jpeg">
+                        <div class="product-image">
+                            <img src="image/produk3.jpeg" alt="Celeng Jaranan">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Jaranan</div>
+                            <h3 class="product-name">Celeng Jaranan</h3>
+                            <div class="product-price">Rp 450.000</div>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                    <!-- Produk 4 -->
+                    <div class="product-card" data-id="4" data-name="Kendang Tong" data-category="Aksesoris" data-price="3000000" data-image="image/produk4.jpeg">
+                        <div class="product-image">
+                            <img src="image/produk4.jpeg" alt="Kendang Tong">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Aksesoris</div>
+                            <h3 class="product-name">Kendang Tong</h3>
+                            <div class="product-price">Rp 3.000.000</div>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                    <!-- Produk 5 -->
+                    <div class="product-card" data-id="5" data-name="Pecut" data-category="Aksesoris" data-price="250000" data-image="image/produk5.jpg">
+                        <div class="product-image">
+                            <img src="image/produk5.jpg" alt="Pecut">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Aksesoris</div>
+                            <h3 class="product-name">Pecut</h3>
+                            <div class="product-price">Rp 250.000</div>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                    <!-- Produk 6 -->
+                    <div class="product-card" data-id="6" data-name="Barongan" data-category="Barongan" data-price="280000" data-image="image/produk6.jpeg">
+                        <div class="product-image">
+                            <img src="image/produk6.jpeg" alt="Barongan">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Barongan</div>
+                            <h3 class="product-name">Barongan</h3>
+                            <div class="product-price">Rp 280.000</div>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                    <!-- Produk 7 -->
+                    <div class="product-card" data-id="7" data-name="Reog Ponorogo" data-category="Barongan" data-price="2500000" data-image="image/produk7.jpeg">
+                        <div class="product-image">
+                            <img src="image/produk7.jpeg" alt="Reog Ponorogo">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Barongan</div>
+                            <h3 class="product-name">Reog Ponorogo</h3>
+                            <div class="product-price">Rp 2.500.000</div>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                    <!-- Produk 8 -->
+                    <div class="product-card" data-id="8" data-name="Barongan" data-category="Barongan" data-price="2000000" data-image="image/produk8.jpeg">
+                        <div class="product-image">
+                            <img src="image/produk8.jpeg" alt="Barongan">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Barongan</div>
+                            <h3 class="product-name">Barongan</h3>
+                            <div class="product-price">Rp 2.000.000</div>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                    <!-- Produk 9 -->
+                    <div class="product-card" data-id="9" data-name="Topeng" data-category="Aksesoris" data-price="550000" data-image="image/produk9.jpeg">
+                        <div class="product-image">
+                            <img src="image/produk9.jpeg" alt="Topeng">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Aksesoris</div>
+                            <h3 class="product-name">Topeng</h3>
+                            <div class="product-price">Rp 550.000</div>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontak Section -->
+        <section id="kontak" class="kontak page-section">
+            <div class="container">
+                <h2>Kontak Kami</h2>
+                <div class="contact-container">
+                    <!-- Info Kontak -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Alamat</h3>
+                                <p>Ds. Tawangsari, Garum RT.03/VII. Kabupaten Blitar.</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Telepon</h3>
+                                <p>0858-9416-5861 / 0813-5775-2528</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-instagram"></i>
+                            <div>
+                                <h3>Instagram</h3>
+                                <p>BudiCahyo0461</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Jam Operasional</h3>
+                                <p>Senin - Jumat: 09:00 - 18:00</p>
+                                <p>Sabtu - Minggu: 10:00 - 16:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Form Kontak -->
+                    <div class="contact-form">
+                        <h3>Kirim Pesan</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Nama Lengkap" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Nomor Telepon">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" placeholder="Pesan Anda" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- HALAMAN ADMIN -->
+        <section id="admin-panel" class="admin-panel page-section">
+            <div class="container">
+                <h2>Panel Admin - Pesanan Masuk</h2>
+                
+                <div id="admin-login" class="admin-login-form">
+                    <h3>Masuk untuk Melihat Pesanan</h3>
+                    <input type="password" id="admin-password" placeholder="Masukkan Password">
+                    <button id="admin-login-btn">Login</button>
+                </div>
+
+                <div id="orders-container" style="display: none;">
+                    <h3>Daftar Pesanan</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID Pesanan</th>
+                                <th>Tanggal</th>
+                                <th>Total</th>
+                                <th>Detail Produk</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="orders-table-body">
+                        </tbody>
+                    </table>
+                    <button class="logout-btn" id="admin-logout-btn">Logout</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>DWI JALOKA</h2>
+                    <p>Tradisi Nusantara, Sentuh Modern</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home" data-page="home">Home</a></li>
+                        <li><a href="#tentang" data-page="tentang">Tentang Kami</a></li>
+                        <li><a href="#produk" data-page="produk">Produk Kami</a></li>
+                        <li><a href="#kontak" data-page="kontak">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/dwijaloka?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Tambahan: Bagian Pengembang -->
+                <div class="footer-developer">
+                    <h3>Pengembang</h3>
+                    <div class="developer-grid">
+                        <div class="developer-avatar" data-developer="1">
+                            <img src="image/rida.jpeg" alt="Developer 1">
+                        </div>
+                        <div class="developer-avatar" data-developer="2">
+                            <img src="image/vita.jpeg" alt="Developer 2">
+                        </div>
+                        <div class="developer-avatar" data-developer="3">
+                            <img src="image/nalunk.jpeg" alt="Developer 3">
+                        </div>
+                        <div class="developer-avatar" data-developer="4">
+                            <img src="image/jhuhan.png" alt="Developer 4">
+                        </div>
+                        <div class="developer-avatar" data-developer="5">
+                            <img src="image/sapta.jpeg" alt="Developer 5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 DWI JALOKA. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content login-modal-content">
+            <span class="close">&times;</span>
+            <div class="login-container">
+                <div class="login-form-container">
+                    <h2>Login</h2>
+                    <form id="login-form">
+                        <div class="form-group">
+                            <input type="email" id="login-email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="login-password" placeholder="Password" required>
+                        </div>
+                        <div class="form-options">
+                            <label class="remember-me">
+                                <input type="checkbox" id="remember"> Ingat saya
+                            </label>
+                            <a href="#" class="forgot-password">Lupa password?</a>
+                        </div>
+                        <button type="submit" class="login-submit-btn">Login</button>
+                    </form>
+                    <div class="login-divider">
+                        <span>atau</span>
+                    </div>
+                    <div class="social-login">
+                        <button class="social-btn google-btn">
+                            <i class="fab fa-google"></i> Login dengan Google
+                        </button>
+                        <button class="social-btn facebook-btn">
+                            <i class="fab fa-facebook-f"></i> Login dengan Facebook
+                        </button>
+                    </div>
+                    <p class="register-link">
+                        Belum punya akun? <a href="#">Daftar sekarang</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Keranjang Belanja</h2>
+            <div class="cart-items">
+                <!-- Item keranjang akan dimuat dengan JavaScript -->
+            </div>
+            <div class="cart-total">
+                <h3>Total: <span id="total-price">Rp 0</span></h3>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tambahan: Developer Detail Modal -->
+    <div id="developerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="developer-profile">
+                <img id="modalAvatar" src="" alt="Developer Avatar">
+                <h2 id="modalName"></h2>
+                <span id="modalRole" class="role"></span>
+                <p id="modalBio"></p>
+                <a id="modalDetailLink" href="#" class="btn">Lihat Portofolio</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
