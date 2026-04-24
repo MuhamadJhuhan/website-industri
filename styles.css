@@ -24,7 +24,7 @@ body {
 
 /* Navigation */
 .navbar {
-    background-color: #8b4513; /* solid, tidak transparan */
+    background-color: #8b4513;
     position: fixed;
     top: 0;
     width: 100%;
