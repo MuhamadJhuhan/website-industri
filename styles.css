@@ -24,12 +24,12 @@ body {
 
 /* Navigation */
 .navbar {
-    background-color: rgba(139, 69, 19, 0.9);
+    background-color: #8b4513; /* solid, tidak transparan */
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
 .nav-container {
